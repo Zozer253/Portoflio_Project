@@ -22,3 +22,40 @@ function typeEffect() {
 }
 
 typeEffect();
+
+// Deuxieme Fonctionnalite 
+
+const prev = document.querySelector('.prev')
+const next = document.querySelector('.next')
+const project = document.querySelectorAll('.projectCOntainer')
+const projectLength = project.length
+
+let ind = 0
+
+prev.addEventListener('click', (e) => {
+  nextImage('prev')
+})
+
+next.addEventListener('click', (e) => {
+  nextImage('next')
+})
+
+function nextImage(direction) {
+  if(direction==='next'){
+    ind++
+    if(ind === projectLength) {
+      ind = 0
+    }
+  } else if(direction === 'prev'){
+    if(ind == 0){
+      ind = projectLength - 1
+    } else {
+      ind--
+    }
+  }
+
+  for(let i=0; i < projectLength; i++){
+    project[i].classList.add('hidden-card')
+  }
+  project[ind].classList.remove('hidden-card')
+}

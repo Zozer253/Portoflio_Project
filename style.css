@@ -285,6 +285,10 @@ button.view {
     bottom: 30%;
 }
 
+.hidden-card {
+    display: none;
+}
+
 
 
 
