@@ -119,6 +119,7 @@ a:hover {
     right: 0;
     bottom: 10px;
     margin: auto;
+    background: var(--gris);
 
 }
 
@@ -133,6 +134,10 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.footer div:hover {
+    background: var(--orange);
 }
 
 .footer div i {
@@ -210,6 +215,10 @@ a:hover {
     width: 20rem;
     border-radius: 50%;
     z-index: 1;
+}
+
+.footer4 , .footer3 , .footer2, .footer1 {
+    background: none;
 }
 
 /*PROJECT CSS*/
@@ -290,36 +299,160 @@ button.view {
 }
 
 
+/* Contact Page */
+
 
 
 
 @media (max-width: 900px) {
     body {
         background-color: var(--blackgris);
+        height: 100%;
     }
 
     .container {
-        width: 100%;
+        width: 80%;
         display: flex;
+        justify-content: center;
         flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        position: relative;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .download {
-        font-size: 0.8rem;
+        font-size: 0.5rem;
         text-align: center;
-        top: 10%;
-        position: absolute;
-        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 30px;
+        margin-top: 5px;
       }
       
 
     .hero-title {
         font-size: 1rem;
+        margin-left: 20px;
     }
 
+    .iam, .name{
+        font-size: 1.1rem;
+    }
+
+    .my-title{
+        font-size: 0.8rem;
+    }
+
+
+
     .hero {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .image-side {
+        width: 100px;
+        height: 180px;
+        position: absolute;
+        top: 280%;
+        right: 20%;
+
+    }
+
+    .orange-triangle {
+        width: 10px;
+        height: 20px;
+        background: var(--orange);
+        border-top: 50px solid transparent;
+        border-right: 50px solid var(--orange);
+        top: -10px;
+        left: -10px;
+    }
+    .bigyelow-triangle{
+        width: 80px;
+        height: 130px;
+        top: -10px;
+        right: -80px;
+    }
+
+
+    .yelow-triangle {
+        width: 50px;
+        height: 90px;
+        left: -20px;
+    }
+
+    .image-side img {
+        width: 10rem;
+    }
+
+    .projectCOntainer {
+        display: flex;
         flex-direction: column;
-        justify-content: center;
+    }
+
+    button.view{
+        position: relative;
+    }
+
+    .hidden-card {
+        display: none;
+    }
+    
+    .footer {
+        width: 100%;
+        height: 120px;
+        /* top: -650px; */
+        bottom: 0px;
+        background: var(--gris);
+    }
+
+    .footer div i{
+        font-size: 1.7rem;
+    }
+
+    .footer4 , .footer3 , .footer2, .footer1 {
+        background: none;
+    }
+
+    .footer div a {
+        font-size: 1rem;
+    }
+
+    .social-media {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        font-size: 0.5em;
+    }
+
+    .social-media a {
+        font-size: 0.2rem;
+    }
+
+    .bigContainerproject .uil{
+        font-size: 3em;
+    }
+
+    .projectdescription h1{
+        font-size: 1.3em;
+        padding-left: 0px;
+    }
+
+    .projectdescription p {
+        font-size: 0.5em;
+        padding-left: 2px;
+        margin-top: 0px;
+    }
+
+    .projectCOntainer {
+        height: 400px;
+    }
+
+    button.view {
+        bottom: 10%;
     }
 }
   

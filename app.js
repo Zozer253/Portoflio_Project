@@ -59,3 +59,7 @@ function nextImage(direction) {
   }
   project[ind].classList.remove('hidden-card')
 }
+
+setInterval(() => {
+  nextImage("next");
+}, 5000);
