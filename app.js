@@ -70,3 +70,12 @@ form.addEventListener('submit', (e) => {
 
   form.reset()
 })
+
+// "skill-progress"
+let skills = document.querySelectorAll('.skill-progress');
+
+skills.forEach(skill => {
+  let progress = skill.getAttribute('data-progress');
+  skill.style.width = progress + '%';
+});
+

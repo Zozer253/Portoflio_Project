@@ -173,6 +173,12 @@ a:hover {
 
 .footer div .uil {
     font-size: 2rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+div#form {
+    background: transparent;
 }
 
 .footer div {
@@ -180,8 +186,9 @@ a:hover {
     position: relative;
     width: 150px;
     height: 150px;
-    padding: 30px auto;
+    padding: 0 0;
     display: flex;
+    padding-top: 20PX;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -236,8 +243,59 @@ label {
     margin-bottom: 0.5em;
 }
 
+/* SKILL PAGE  */
+.skill {
+    margin-bottom: 10px;
+    color: #f1f1f1;
+  }
+  
+  .skill-bar {
+    width: 70%;
+    height: 10px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .skill-progress {
+    height: 80%;
+    background-color: #FF5722;
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+  }
 
+  
+  /* Pourcentage de progression pour chaque compétence */
+  
+  .skill-progress[data-progress="90"] {
+    width: 90%;
+  }
+  
+  .skill-progress[data-progress="80"] {
+    width: 80%;
+  }
+  
+  .skill-progress[data-progress="70"] {
+    width: 70%;
+  }
 
+  .skill-progress[data-progress="75"] {
+    width: 75%;
+  }
+
+  .skill-progress[data-progress="60"] {
+    width: 60%;
+  }
+
+  .skill-progress[data-progress="65"] {
+    width: 65%;
+  }
+
+  div.active {
+    background: var(--orange);
+  }
+  
+  
 
 
 @media only screen and (max-width: 768px){
@@ -330,6 +388,31 @@ button.view {
 .hidden-card {
     display: none;
 }
+
+
+  .skills .h1 h1{
+    font-size: 0.8em;
+    color: white;
+}
+
+.form {
+    margin: 10px;
+}
+
+.form h1, .h1 h1 {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.skills .skill-name {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.skills .h1{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -548,4 +631,30 @@ button.view {
         height: 3em;
         border-radius: 5px;
     }
+
+    .skill{
+        margin-bottom: 20px;
+      }
+
+    .skills .h1 h1{
+        font-size: 2em;
+    }
+      
+    .skill-name {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+      
+      .skill-bar {
+        width: 80%;
+        height: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      
+      .skill-progress {
+        height: 100%;
+        border-radius: 10px;
+        transition: width 1s ease-in-out;
+      }
 }
