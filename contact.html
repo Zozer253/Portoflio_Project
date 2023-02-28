@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects Done</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mbf.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
     <link rel="shortcut icon" href="images/profile.png" type="image/x-icon">
 </head>
@@ -18,8 +18,23 @@
             </a>
         </header>
         <div class="maincontact">
-            <form action="">
-                
+            <div class="mapinfon">
+                <h1>GET IN TOUCH</h1>
+            </div>
+            <form action="https://formspree.io/f/mwkjbpzq" method="POST" id="form">
+                <h1>Send a Message</h1>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quam est rem in necessitatibus excepturi neque sint sit. 
+                    Quidem facilis natus, fuga ex cum soluta dicta aliquid beatae, labore delectus pariatur!
+                </p>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                <button type="submit" class="submit download">SEND</button>
             </form>
         </div>
         <div class="footer">
